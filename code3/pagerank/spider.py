@@ -117,7 +117,8 @@ while True:
         if len(up.scheme) < 1:
             href = urljoin(url, href)
         ipos = href.find('#')
-        if ipos > 1: href = href[:ipos]
+        if ipos > 1:
+            href = href[:ipos]
         if href.endswith('.png') or href.endswith('.jpg') or href.endswith('.gif'):
             continue
         if href.endswith('/'):
